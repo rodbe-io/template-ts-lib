@@ -9,10 +9,7 @@
     "verbatimModuleSyntax": true,
     "noUncheckedIndexedAccess": true,
 
-    /* Bundler mode */
-		// Allow JS files to be imported from TS and vice versa
 		"allowJs": true,
-		// Use correct ESM import behavior
 		"esModuleInterop": true,
     "outDir": "dist",
     "noEmit": true,
@@ -21,7 +18,6 @@
     "resolveJsonModule": true,
     "moduleResolution": "Bundler",
 
-    /* Linting */
     "noFallthroughCasesInSwitch": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
@@ -30,6 +26,6 @@
       "@/*": ["./src/*"],
     }
   },
-  "include": ["src"],
+  "include": ["src", "commitlint.config.ts", ".nano-staged.js", "vitest.config.ts", "release.config.js"],
   "exclude": ["node_modules", "dist"]
 }
