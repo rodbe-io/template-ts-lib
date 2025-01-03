@@ -1,5 +1,8 @@
 {
-  "author": "",
+  "author": "RBX_AUTHOR",
+  "bugs": {
+    "url": "RBX_HTTPS_REPOSITORY/issues"
+  },
   "description": "RBX npm Library",
   "devDependencies": {
     "@commitlint/cli": "^19.6.1",
@@ -37,17 +40,37 @@
     "pnpm": ">= 9.15.2"
   },
   "enginesStrict": true,
-  "keywords": [],
+  "exports": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "homepage": "RBX_HTTPS_REPOSITORY",
+  "keywords": [
+    "typescript",
+    "front-end"
+  ],
   "license": "MIT",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "name": "RBX_PROJECT_NAME",
   "packageManager": "pnpm@9.15.2",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+RBX_HTTPS_REPOSITORY"
+  },
   "scripts": {
+    "build": "pkgroll",
+    "bump": "semantic-release",
     "commitlint": "commitlint --edit",
-    "test:unit": "echo \"TODO\" && exit 0",
-    "prepare": "husky || true"
+    "prepare": "husky || true",
+    "start": "pkgroll --watch",
+    "test:unit": "vitest run",
+    "type-check": "tsc --noEmit"
   },
   "type": "module",
+  "types": "./dist/index.d.ts",
   "version": "1.0.0",
   "volta": {
     "node": "18.18.2"
