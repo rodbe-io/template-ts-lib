@@ -62,9 +62,9 @@
   },
   "scripts": {
     "build": "pkgroll",
-    "bump": "semantic-release",
     "commitlint": "commitlint --edit",
     "prepare": "husky || true",
+    "release": "semantic-release",
     "start": "pkgroll --watch",
     "test:unit": "vitest run",
     "type-check": "tsc --noEmit"
