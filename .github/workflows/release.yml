@@ -14,8 +14,8 @@ env:
 
 jobs:
   setup:
-    runs-on: ubuntu-latest
     name: Setup workflow
+    runs-on: ubuntu-latest
     outputs:
       NODE_VERSION: ${{ steps.get-node-npm-version.outputs.NODE_VERSION }}
       PNPM_VERSION: ${{ steps.get-node-npm-version.outputs.PNPM_VERSION }}
