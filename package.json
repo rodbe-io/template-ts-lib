@@ -3,10 +3,16 @@
   "bugs": {
     "url": "RBX_HTTPS_REPOSITORY/issues"
   },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  },
   "description": "RBX npm Library",
   "devDependencies": {
     "@commitlint/cli": "^19.6.1",
     "@commitlint/config-conventional": "^19.6.0",
+    "@commitlint/cz-commitlint": "^19.6.1",
     "@commitlint/format": "^19.5.0",
     "@commitlint/types": "^19.5.0",
     "@eslint/js": "^9.17.0",
@@ -65,6 +71,7 @@
   },
   "scripts": {
     "build": "pkgroll",
+    "commit": "git-cz",
     "commitlint": "commitlint --edit",
     "prebuild": "pnpm run type-check",
     "prepare": "husky || true",
