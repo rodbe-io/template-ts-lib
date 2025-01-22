@@ -8,7 +8,8 @@
       "path": "@commitlint/cz-commitlint"
     }
   },
-  "description": "RBX npm Library",
+  "dependencies": {},
+  "description": "RBX_DESCRIPTION",
   "devDependencies": {
     "@commitlint/cli": "^19.6.1",
     "@commitlint/config-conventional": "^19.6.0",
@@ -56,8 +57,9 @@
   ],
   "homepage": "RBX_HTTPS_REPOSITORY",
   "keywords": [
-    "typescript",
-    "front-end"
+    "front-end",
+    "RBX",
+    "typescript"
   ],
   "license": "MIT",
   "name": "RBX_PROJECT_NAME",
