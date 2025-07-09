@@ -28,7 +28,7 @@
     "dist"
   ],
   "scripts": {
-    "prebuild": "pnpm run type-check",
+    "prebuild": "pnpm run ts:check",
     "build": "pkgroll",
     "commit": "git-cz",
     "commitlint": "commitlint --edit",
