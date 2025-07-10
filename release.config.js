@@ -44,6 +44,13 @@ export default {
         npmPublish: true,
       },
     ],
+    // NOTE: if use github registry, uncomment this
+    // [
+    //   '@semantic-release/github',
+    //   {
+    //     assets: ['dist'],
+    //   },
+    // ],
     [
       '@semantic-release/git',
       {

@@ -6,7 +6,7 @@ import js from '@eslint/js';
 import json from '@eslint/json';
 import tsEslint from 'typescript-eslint';
 import prettier from 'eslint-plugin-prettier/recommended';
-import packageJson from 'eslint-plugin-package-json/configs/recommended';
+import packageJson from 'eslint-plugin-package-json';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -132,6 +132,6 @@ export default tsEslint.config(
       'spaced-comment': 'error',
     },
   },
-  packageJson,
+  packageJson.configs.recommended,
   prettier
 );
